@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão Alura</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/book?f=classic&s=solid">
@@ -17,7 +20,7 @@
         <nav class="sidebar__navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo do spotify">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="logo do spotify">
                 </a>
             </div>
             
@@ -57,6 +60,17 @@
                 </div>
             </section>
 
+            <div class="terms">
+                <a href="">Legal</a>
+                <a href="">Centro de privacidade</a>
+                <a href="">Política de privacidade</a>
+                <a href="">Cookies</a>
+                <a href="">Spbre anúncios</a>
+                <a href="">Acessibilidade</a>
+                <a href="">Notice at collection</a>
+                <a href="">Your Privacy Choices</a>
+            </div>
+
             <div class="cookies">
                 <a href="">Cookies</a>
             </div>
@@ -69,6 +83,42 @@
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="seta esquerda">
+                    </button>
+
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="seta direita">
+                    </button>
+                </div>
+
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que voce quer ouvir?"/>
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        
+
+            <div class="playlist-container">
+                <div class="result-playlists">
+                    <div class="playlist">
+                        <h1 id="greeting">Boa Tarde</h1>
+                        <h2 class="session">Navegar por todas as seções</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="disclaimer-premium">
         <div class="disclaimer-premium__text">
